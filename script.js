@@ -3,19 +3,6 @@ const nextButton = document.getElementById("next-btn")
 const questionContainerElement = document.getElementById('question-container')
 const questionElement= document.getElementById("question")
 const answerButtonsElement = document.getElementById('answer-button')
-const startingMin = 1
-const countdownElement = document.getElementById('countdown')
-let time = startingMin * 60
-
-setinterval(updateCountdown, 1000)
-
-function updateCountdown() {
-    const min = Math.floor(time / 60);
-    let sec = time% 60;
-
-    countdownElements.innerHTML = `${minutes} : ${seconds}`
-    time--
-}
 
 let shuffledQuestions, currentQuestionIndex
 
